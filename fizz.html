@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fizz Buzz - Demo</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Fizz Buzz</h1>
+        </header>
+        <nav>
+            <span class="nav-item">
+                <a href="index.html">Home</a>
+            </span>
+            <span class="nav-item">
+                <a href="about.html">About</a>
+            </span>
+            <span class="nav-item selected">
+                <a href="fizz.html">Fizz Buzz Demo</a>
+            </span>
+        </nav>
+        <section>
+            <p>
+                Demo of Fizz Buzz (javascript required):
+            </p>
+            <div id="fizzbuzz">
+                <button onclick="fizzBuzz()">Click Here</button>
+            </div>
+            <hr>
+            <h2>The code:</h2>
+            <pre>
+                function fizzBuzz() {
+                    document.getElementById("fizzbuzz").innerHTML = "<br>";
+                    for(i = 1; i <= 100; i++) {
+                        if ((i % 3) == 0 && (i % 5) == 0) {
+                            document.getElementById("fizzbuzz").innerHTML += "FizzBuzz" + "<br>";
+                        }
+                        else if (i % 3 == 0) {
+                            document.getElementById("fizzbuzz").innerHTML += "Fizz" + "<br>";
+                        }
+                        else if (i % 5 == 0) {
+                            document.getElementById("fizzbuzz").innerHTML += "Buzz" + "<br>";
+                        }
+                        else {
+                            document.getElementById("fizzbuzz").innerHTML += i + "<br>";
+                        }
+                    }
+                }
+            </pre>
+        </section>
+    </body>
+</html>
+
+<script>
+
+    function fizzBuzz() {
+        document.getElementById("fizzbuzz").innerHTML = "<br>";
+        for(i = 1; i <= 100; i++) {
+            if ((i % 3) == 0 && (i % 5) == 0) {
+                document.getElementById("fizzbuzz").innerHTML += "FizzBuzz" + "<br>";
+            }
+            else if (i % 3 == 0) {
+                document.getElementById("fizzbuzz").innerHTML += "Fizz" + "<br>";
+            }
+            else if (i % 5 == 0) {
+                document.getElementById("fizzbuzz").innerHTML += "Buzz" + "<br>";
+            }
+            else {
+                document.getElementById("fizzbuzz").innerHTML += i + "<br>";
+            }
+        }
+    }
+</script>
+

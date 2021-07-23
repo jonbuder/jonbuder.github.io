@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Qahiri&display=swap');
+
+html, body {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+body {
+    background-color: antiquewhite;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Qahiri', sans-serif;
+    color: darkblue;
+}
+
+
+
+nav {
+    background-color: black;
+    margin: auto;
+    color: white;
+    font-size: 18pt;
+    font-variant: small-caps;
+    width: 30em;
+}
+
+.nav-item {
+    margin: auto 2em auto 2em;
+    padding: 0em .5em 0em .5em;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.selected {
+    background-color: lightsteelblue;
+    color: black;
+    border-bottom: 2px solid white;
+}
+
+section {
+    background-color: lightsteelblue;
+    margin: auto;
+    padding: 2em;
+    width: 50em;
+}
